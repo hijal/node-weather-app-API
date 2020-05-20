@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/image/computer.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= title %></title>
+</head>
+
+<body>
+    <section class="top-banner">
+        <div class="container">
+          <h1 class="heading">Simple Weather App</h1>
+          <form>
+            <input placeholder="Search for a city" autofocus>
+            <button>search</button>
+          </form>
+        </div>
+      </section>
+      <section class="ajax-section">
+        <div class="container text-center">
+          <div class="result">
+            <p id="message-1"></p>
+            <hr style="width: 100px;">
+            <p id="message-2"></p>
+          </div>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="container">
+          <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">Hijikesh Hijal</a>
+          </small>
+        </div>
+      </footer>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

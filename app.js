@@ -11,6 +11,8 @@ const viewPath = path.join(__dirname, './views')
 const app = express();
 
 
+const port = process.env.PORT || 3000;
+
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
@@ -54,6 +56,6 @@ app.get('/weather', (req, res) => {
 });
 
 
-app.listen(3000, () => {
-    console.log('App listening on port 3000!');
+app.listen(port, () => {
+    console.log('App listening on port ' + port);
 });
